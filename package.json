@@ -9,6 +9,8 @@
   "author": "Yanael Barbier <st3w4r@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "async": "^1.4.2",
+    "bluebird": "^2.10.0",
     "mysql": "^2.9.0",
     "request": "^2.61.0"
   }
