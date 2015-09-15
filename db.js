@@ -22,17 +22,14 @@ exports.query = function(query) {
 }
 
 exports.insert = function(query, data) {
-    console.log(query);
-    console.log(data);
     connection.queryAsync(query, data)
         .then(function(result){
-            console.log('Insert OK:');
+            console.log('Insert OK');
         })
         .catch(function(err){
             console.log('Insert ERROR:');
             console.log(err);
         });
-        // if (err) { return console.log('Insert ERROR:'); console.log(err); }
 }
 
 exports.end = function(err) {
